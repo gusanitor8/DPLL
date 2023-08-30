@@ -74,11 +74,11 @@ def bruteForce(clausal):
 
     
             
-array = ["¬P","S",["P","Q",["¬S","¬P","S","P","Q"]]]
-vals = bruteForce(array)
-print("Resultado: "+str(vals[0]))
-print("Asignacion: "+str(vals[1]))
-print("Aplicacion: "+str(vals[2]))
+# array = ["¬P","S",["P","Q",["¬S","¬P","S","P","Q"]]]
+# vals = bruteForce(array)
+# print("Resultado: "+str(vals[0]))
+# print("Asignacion: "+str(vals[1]))
+# print("Aplicacion: "+str(vals[2]))
 print("-------------------------------------------------------------------------------------------------")
 array = ["P","¬P"]
 vals = bruteForce(array)
@@ -92,7 +92,13 @@ print("Resultado: "+str(vals[0]))
 print("Asignacion: "+str(vals[1]))
 print("Aplicacion: "+str(vals[2]))
 print("-------------------------------------------------------------------------------------------------")
-array = [["P","¬Q"],["Q","¬s"],["¬P","s"],["¬Q","s"]]
+array = [["¬P","¬R","¬S"],["¬Q","¬P","¬S"]]
+vals = bruteForce(array)
+print("Resultado: "+str(vals[0]))
+print("Asignacion: "+str(vals[1]))
+print("Aplicacion: "+str(vals[2]))
+print("-------------------------------------------------------------------------------------------------")
+array = [["¬P","¬Q"],["Q","¬S"],["¬P","S"],["¬Q","S"]]
 vals = bruteForce(array)
 print("Resultado: "+str(vals[0]))
 print("Asignacion: "+str(vals[1]))
