@@ -1,9 +1,9 @@
 # SAT 
 ## Integrantes
-Gustavo González 21438
-Diego Andres Alonzo Medinilla 20172
-Dáriel Villatoro 20776
-Maria Ramirez 21342
+* Gustavo González 21438
+* Diego Andres Alonzo Medinilla 20172
+* Dáriel Villatoro 20776
+* Maria Ramirez 21342
 ## Contexto
 Es el proyecto 2 de lógica matemática, consiste en el desarrollo de dos algoritmos, el algoritmo DPLL para la resolución del problema SAT y uno de fuerza bruta para hacer lo mismo pero menos eficiente.
 ## Resultados
