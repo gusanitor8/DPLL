@@ -55,8 +55,12 @@ def bruteForce(clausal):
     for combination in combinations:
         assignment = []
         for i, (symbol, negation) in enumerate(symbols):
-            assignment.append((negation, not combination[i]))
-            assignment.append((symbol, combination[i]))
+            if(combination[i]):
+                assignment.append((negation, 0))
+                assignment.append((symbol, 1))
+            else:
+                assignment.append((negation, 1))
+                assignment.append((symbol, 0))
         result.append(assignment)
     for x, arr in enumerate(result):
         temp = clausalBool
@@ -88,7 +92,7 @@ print("Resultado: "+str(vals[0]))
 print("Asignacion: "+str(vals[1]))
 print("Aplicacion: "+str(vals[2]))
 print("-------------------------------------------------------------------------------------------------")
-array = [["P","¬Q"],["Q","¬S"],["¬P","S"],["¬Q","S"]]
+array = [["P","¬Q"],["Q","¬s"],["¬P","s"],["¬Q","s"]]
 vals = bruteForce(array)
 print("Resultado: "+str(vals[0]))
 print("Asignacion: "+str(vals[1]))
